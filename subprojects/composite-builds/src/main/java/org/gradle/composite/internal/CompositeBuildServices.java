@@ -80,8 +80,8 @@ public class CompositeBuildServices extends AbstractPluginServiceRegistry {
             return new DefaultIncludedBuildControllers(executorFactory, buildRegistry, coordinationService);
         }
 
-        public IncludedBuildTaskGraph createIncludedBuildTaskGraph(IncludedBuildControllers controllers) {
-            return new DefaultIncludedBuildTaskGraph(controllers);
+        public IncludedBuildTaskGraph createIncludedBuildTaskGraph(IncludedBuildControllers controllers, BuildStateRegistry buildRegistry) {
+            return new DefaultIncludedBuildTaskGraph(controllers, buildRegistry);
         }
     }
 
