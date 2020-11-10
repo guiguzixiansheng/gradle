@@ -44,7 +44,7 @@ dependencies {
         // Java Libraries
         api("com.github.javaparser:javaparser-core:$javaParserVersion")
         api("com.github.javaparser:javaparser-symbol-solver-core:$javaParserVersion")
-        api("com.google.guava:guava:27.1-jre")
+        api("com.google.guava:guava:30.0-jre")
         api("com.google.code.gson:gson:2.7")
         api("com.nhaarman:mockito-kotlin:1.6.0")
         api("com.thoughtworks.qdox:qdox:2.0-M9")

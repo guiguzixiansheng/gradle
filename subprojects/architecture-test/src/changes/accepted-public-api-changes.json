@@ -1,3 +1,58 @@
 {
-    "acceptedApiChanges": []
+    "acceptedApiChanges": [
+        {
+            "type": "org.gradle.api.artifacts.dsl.ExternalModuleDependencyVariantSpec",
+            "member": "Class org.gradle.api.artifacts.dsl.ExternalModuleDependencyVariantSpec",
+            "acceptation": "[ADD YOUR CUSTOM REASON HERE]",
+            "changes": []
+        },
+        {
+            "type": "org.gradle.api.artifacts.dsl.ExternalModuleDependencyVariantSpec",
+            "member": "Method org.gradle.api.artifacts.dsl.ExternalModuleDependencyVariantSpec.artifactType(java.lang.String)",
+            "acceptation": "[ADD YOUR CUSTOM REASON HERE]",
+            "changes": []
+        },
+        {
+            "type": "org.gradle.api.artifacts.dsl.ExternalModuleDependencyVariantSpec",
+            "member": "Method org.gradle.api.artifacts.dsl.ExternalModuleDependencyVariantSpec.classifier(java.lang.String)",
+            "acceptation": "[ADD YOUR CUSTOM REASON HERE]",
+            "changes": []
+        },
+        {
+            "type": "org.gradle.api.artifacts.dsl.ExternalModuleDependencyVariantSpec",
+            "member": "Method org.gradle.api.artifacts.dsl.ExternalModuleDependencyVariantSpec.platform()",
+            "acceptation": "[ADD YOUR CUSTOM REASON HERE]",
+            "changes": []
+        },
+        {
+            "type": "org.gradle.api.artifacts.dsl.ExternalModuleDependencyVariantSpec",
+            "member": "Method org.gradle.api.artifacts.dsl.ExternalModuleDependencyVariantSpec.testFixtures()",
+            "acceptation": "[ADD YOUR CUSTOM REASON HERE]",
+            "changes": []
+        },
+        {
+            "type": "org.gradle.api.artifacts.dsl.DependencyHandler",
+            "member": "Method org.gradle.api.artifacts.dsl.DependencyHandler.platform(org.gradle.api.provider.Provider)",
+            "acceptation": "[ADD YOUR CUSTOM REASON HERE]",
+            "changes": [
+                "METHOD_NEW_DEFAULT"
+            ]
+        },
+        {
+            "type": "org.gradle.api.artifacts.dsl.DependencyHandler",
+            "member": "Method org.gradle.api.artifacts.dsl.DependencyHandler.testFixtures(org.gradle.api.provider.Provider)",
+            "acceptation": "[ADD YOUR CUSTOM REASON HERE]",
+            "changes": [
+                "METHOD_NEW_DEFAULT"
+            ]
+        },
+        {
+            "type": "org.gradle.api.artifacts.dsl.DependencyHandler",
+            "member": "Method org.gradle.api.artifacts.dsl.DependencyHandler.variantOf(org.gradle.api.provider.Provider,org.gradle.api.Action)",
+            "acceptation": "[ADD YOUR CUSTOM REASON HERE]",
+            "changes": [
+                "Method added to interface"
+            ]
+        }
+    ]
 }

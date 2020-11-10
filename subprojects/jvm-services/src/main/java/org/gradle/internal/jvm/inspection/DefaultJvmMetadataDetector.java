@@ -27,6 +27,7 @@ import org.gradle.process.internal.ExecHandleFactory;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
+import java.io.IOException;
 import java.util.EnumMap;
 
 
@@ -128,8 +129,17 @@ public class DefaultJvmMetadataDetector implements JvmMetadataDetector {
     }
 
     private File writeProbeClass() {
-        File probe = new MetadataProbe().writeClass(Files.createTempDir());
-        probe.deleteOnExit();
+        File probe = null;
+        try {
+            final File folder = java.nio.file.Files.createTempDirectory("probe-class").toFile();
+            probe = new MetadataProbe().writeClass(folder);
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if(probe != null) {
+                probe.deleteOnExit();
+            }
+        }
         return probe;
     }
 
